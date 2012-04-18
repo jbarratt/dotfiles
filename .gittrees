@@ -18,3 +18,7 @@
 	url = https://github.com/tpope/vim-fugitive.git
 	path = .vim/bundle/vim-fugitive
 	branch = master
+[subtree ".vim/bundle/vim-markdown"]
+	url = https://github.com/tpope/vim-markdown.git
+	path = .vim/bundle/vim-markdown
+	branch = master
