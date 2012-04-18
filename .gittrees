@@ -6,3 +6,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 	path = .vim/bundle/vim-colors-solarized
 	branch = master
+[subtree ".vim/bundle/hammer"]
+	url = https://github.com/vim-scripts/hammer.vim.git
+	path = .vim/bundle/hammer
+	branch = master
