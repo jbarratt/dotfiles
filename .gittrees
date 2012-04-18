@@ -6,3 +6,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 	path = .vim/bundle/vim-pathogen
 	branch = master
+[subtree ".vim/bundle/vim-colors-solarized"]
+	url = https://github.com/altercation/vim-colors-solarized.git
+	path = .vim/bundle/vim-colors-solarized
+	branch = master
