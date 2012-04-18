@@ -10,3 +10,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 	path = .vim/bundle/vim-colors-solarized
 	branch = master
+[subtree ".vim/bundle/syntastic"]
+	url = https://github.com/scrooloose/syntastic.git
+	path = .vim/bundle/syntastic
+	branch = master
