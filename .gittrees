@@ -26,3 +26,7 @@
 	url = https://github.com/sjl/gundo.vim.git
 	path = .vim/bundle/gundo
 	branch = master
+[subtree ".vim/bundle/vim-octopress"]
+	url = https://github.com/tangledhelix/vim-octopress.git
+	path = .vim/bundle/vim-octopress
+	branch = master
