@@ -1,3 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set nobackup
 set noswapfile
 
@@ -21,5 +24,7 @@ imap aa @
 imap jj <Esc>
 
 syntax enable
+filetype plugin indent on
+
 set background=dark
 colorscheme solarized
