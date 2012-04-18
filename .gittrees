@@ -22,3 +22,7 @@
 	url = https://github.com/tpope/vim-markdown.git
 	path = .vim/bundle/vim-markdown
 	branch = master
+[subtree ".vim/bundle/gundo"]
+	url = https://github.com/sjl/gundo.vim.git
+	path = .vim/bundle/gundo
+	branch = master
