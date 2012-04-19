@@ -10,7 +10,7 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-set ai to terse nowarn sm ruler redraw sw=4 ts=4
+set ai to terse nowarn sm ruler redraw sw=2 ts=2
 set smartcase
 set expandtab smarttab
 
