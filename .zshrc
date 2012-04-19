@@ -7,7 +7,8 @@ load_correction
 
 # Make ls colorized for Lion
 export CLICOLOR=1
-export LSCOLORS=gxex
+# faux solarized scheme for ls
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 prompts '%{$fg_bold[green]%}$(COLLAPSED_DIR)%{$reset_color%}$(virtualenv_info) %{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
 
