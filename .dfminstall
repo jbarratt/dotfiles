@@ -5,3 +5,5 @@ autoload skip
 colors skip
 doc skip
 zshuery skip
+bin skip
+bitmaps skip
