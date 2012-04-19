@@ -5,6 +5,10 @@ load_aliases
 load_completion ~/.dotfiles/zshuery/completion
 load_correction
 
+# Make ls colorized for Lion
+export CLICOLOR=1
+export LSCOLORS=gxex
+
 prompts '%{$fg_bold[green]%}$(COLLAPSED_DIR)%{$reset_color%}$(virtualenv_info) %{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
 
 chpwd() {
