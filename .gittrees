@@ -38,3 +38,7 @@
 	url = https://github.com/myfreeweb/zshuery.git
 	path = zshuery
 	branch = master
+[subtree ".vim/bundle/fuzzyfinder"]
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+	path = .vim/bundle/fuzzyfinder
+	branch = master
