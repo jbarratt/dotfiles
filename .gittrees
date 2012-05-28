@@ -38,3 +38,7 @@
 	url = https://github.com/vim-scripts/FuzzyFinder.git
 	path = .vim/bundle/fuzzyfinder
 	branch = master
+[subtree ".vim/bundle/vim-l9"]
+	url = https://github.com/vim-scripts/L9.git
+	path = .vim/bundle/vim-l9
+	branch = master
