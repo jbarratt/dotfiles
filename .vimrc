@@ -28,7 +28,6 @@ let g:syntastic_auto_loc_list = 1
 
 imap uu _
 imap hh =>
-imap aa @
 
 " make jj work to get you out of modes
 imap jj <Esc>
@@ -44,3 +43,17 @@ let mapleader = ','
 set wildmenu
 
 au BufNewFile,BufRead *.t set filetype=perl
+
+" fuzzy finder (lifted from justone)
+let g:fuf_modesDisable = [ 'mrucmd', ]
+let g:fuf_coveragefile_exclude = '\v\~$|blib|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)|svn-base$'
+let g:fuf_maxMenuWidth = 150
+"let g:fuf_previewHeight = 20
+
+noremap <leader>ff :FufCoverageFile<CR>
+noremap <leader>fr :FufMruFile<CR>
+noremap <leader>fl :FufMruFileInCwd<CR>
+noremap <leader>ft :FufTag<CR>
+noremap <leader>fb :FufBuffer<CR>
+noremap <leader>fc :FufRenewCache<CR>
