@@ -273,4 +273,16 @@ settings = {
     crapbuster_levels = "JOINS PARTS QUITS NICKS CLIENTCRAP CRAP MODE TOPICS KICKS";
   };
 };
-ignores = ( { mask = "monitor"; level = "ALL"; } );
+ignores = (
+  { mask = "monitor"; level = "ALL"; },
+  {
+    level = "JOINS PARTS QUITS NICKS";
+    channels = ( "##infra-talk", "#bofh", "#bpm" );
+  },
+  {
+    level = "ACTIONS";
+    pattern = "(away|gone|back|playin|weg|wech|returned)";
+    regexp = "yes";
+    channels = ( "##infra-talk", "#bofh", "#bpm" );
+  }
+);
