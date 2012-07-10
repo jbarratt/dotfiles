@@ -263,5 +263,14 @@ settings = {
     nick = "jbarratt";
   };
   "fe-text" = { actlist_sort = "refnum"; };
+  "perl/core/scripts" = {
+    growl_net_client = "127.0.0.1";
+    growl_net_pass = "goobers";
+    growl_show_privmsg = "yes";
+    growl_reveal_privmsg = "yes";
+    growl_show_hilight = "yes";
+    growl_net_sticky_away = "yes";
+    crapbuster_levels = "JOINS PARTS QUITS NICKS CLIENTCRAP CRAP MODE TOPICS KICKS";
+  };
 };
 ignores = ( { mask = "monitor"; level = "ALL"; } );
