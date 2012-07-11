@@ -46,3 +46,7 @@
 	url = https://github.com/kfdm/irssi-growl.git
 	path = .irssi/scripts/irssi-growl
 	branch = master
+[subtree ".irssi-extras/solarized"]
+	url = https://github.com/huyz/irssi-colors-solarized.git
+	path = .irssi-extras/solarized
+	branch = master

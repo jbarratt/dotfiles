@@ -173,9 +173,9 @@ statusbar = {
     topic_empty = " Irssi v$J - http://www.irssi.org";
 
     # all of these treated specially, they're only displayed when needed
-    lag = "{sb Lag: $0-}";
+    lag = "{sb Lag: %m$0-%n}";
     act = "{sb Act: $0-}";
-    more = "-- more --";
+    more = "%k%3-- more --%n";
   };
 
   # there's two type of statusbars. root statusbars are either at the top
@@ -262,6 +262,11 @@ settings = {
     user_name = "jbarratt";
     nick = "jbarratt";
   };
+  "fe-common/core" = {
+    # Solarized
+    theme = "solarized-universal";
+    hilight_color = "= %R";
+  };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
     growl_net_client = "127.0.0.1";
@@ -273,6 +278,9 @@ settings = {
     crapbuster_levels = "JOINS PARTS QUITS NICKS CLIENTCRAP CRAP MODE TOPICS KICKS";
   };
 };
+hilights = (
+  { text = "jbarratt"; color = "%M"; nick = "yes"; word = "yes"; }
+);
 ignores = (
   { mask = "monitor"; level = "ALL"; },
   {
