@@ -21,6 +21,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 alias vi=vim
+alias rd="open /System/Library/CoreServices/Screen\ Sharing.app"
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
