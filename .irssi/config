@@ -284,5 +284,6 @@ ignores = (
     pattern = "(away|gone|back|playin|weg|wech|returned)";
     regexp = "yes";
     channels = ( "##infra-talk", "#bofh", "#bpm" );
-  }
+  },
+  { level = "JOINS QUITS MODES"; channels = ( "&bitlbee" ); }
 );
