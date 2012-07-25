@@ -10,7 +10,14 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-set ai to terse nowarn sm ruler redraw sw=2 ts=2
+"set ai to terse nowarn sm ruler redraw sw=2 ts=2
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal textwidth=80
+set ai
+set to "timeout for getting commands
+set ruler redraw
 set smartcase
 set expandtab smarttab
 
