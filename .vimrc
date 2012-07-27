@@ -24,6 +24,9 @@ set expandtab smarttab
 set bs=2
 set hls
 
+" supposed to make vim use the system clipboard
+set clipboard=unnamed
+
 " for when you edit a file you forgot you'll need perms for afterwards
 cmap w!! w !sudo tee % >/dev/null
 
