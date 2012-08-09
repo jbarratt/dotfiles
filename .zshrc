@@ -22,6 +22,7 @@ eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 alias vi=vim
 alias rd="open /System/Library/CoreServices/Screen\ Sharing.app"
+alias clean_downloads="find ~/Downloads -mtime +30 -maxdepth 1 -print -exec rmtrash '{}' ';'"
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
