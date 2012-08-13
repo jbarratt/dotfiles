@@ -266,6 +266,7 @@ settings = {
     # Solarized
     theme = "solarized-universal";
     hilight_color = "= %R";
+    autolog = "yes";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
