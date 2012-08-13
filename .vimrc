@@ -67,3 +67,29 @@ noremap <leader>fl :FufMruFileInCwd<CR>
 noremap <leader>ft :FufTag<CR>
 noremap <leader>fb :FufBuffer<CR>
 noremap <leader>fc :FufRenewCache<CR>
+
+" make SPACE do a 'next page'
+nnoremap <SPACE> <PAGEDOWN>
+
+" auto-reload vimrc files if you edit them
+augroup VimReload
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
+
+" tune undo history; keep things forever but consildated
+if has('persistent_undo')
+    set undofile
+endif
+
+set undodir=$HOME/tmp/.VIM_UNDO_FILES
+set undolevels=5000
+
+" turn on block mode (get to it with CTRL-V) virtualedit (no char needed)
+set virtualedit=block
+
+" when I open a file jump back to where my cursor was
+autocmd BufReadPost *
+\ if line("'\"") > 1 && line("'\"") <= line("$") 
+\|  exe "normal! g`\""
+\| endif
