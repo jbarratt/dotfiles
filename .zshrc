@@ -32,3 +32,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # feels like I should not have to do this
 rvm default
 
+export PYTHONDONTWRITEBYTECODE=1
