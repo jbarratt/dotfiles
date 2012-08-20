@@ -93,3 +93,10 @@ autocmd BufReadPost *
 \ if line("'\"") > 1 && line("'\"") <= line("$") 
 \|  exe "normal! g`\""
 \| endif
+
+" make window nav like tmux
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
