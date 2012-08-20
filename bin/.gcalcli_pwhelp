@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import subprocess
+import re
+
+full_string = subprocess.check_output(['security', 'find-generic-password', '-gs', 'gcalcli'], stderr=subprocess.STDOUT)
+pw = re.search('password: "(.*)"', full_string).group(1)
+
+print pw,
