@@ -36,9 +36,6 @@ map <leader>a :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list = 1
 
-imap uu _
-imap hh =>
-
 " make jj work to get you out of modes
 imap jj <Esc>
 
