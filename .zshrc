@@ -26,10 +26,10 @@ alias clean_downloads="find ~/Downloads -mtime +30 -maxdepth 1 -print -exec rmtr
 alias cleanpyc='find . -type f -name "*.pyc" -delete;'
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+# feels like I should not have to do this
+rvm default
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# feels like I should not have to do this
-rvm default
 
 export PYTHONDONTWRITEBYTECODE=1
