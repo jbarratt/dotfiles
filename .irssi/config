@@ -281,7 +281,7 @@ settings = {
 };
 hilights = (
   {
-    text = "(j+o+s+h+|b(a|e)r+(a|e)t+)";
+    text = "([jy]+o+s+h+|b[ae]r+[ae]t+)";
     nick = "yes";
     word = "yes";
     regexp = "yes";
