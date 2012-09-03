@@ -58,3 +58,7 @@
 	url = https://github.com/insanum/gcalcli.git
 	path = apps/gcalcli
 	branch = master
+[subtree ".vim/bundle/taskwarrior-vim"]
+	url = https://github.com/nixternal/taskwarrior-vim.git
+	path = .vim/bundle/taskwarrior-vim
+	branch = master
