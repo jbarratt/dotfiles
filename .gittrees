@@ -58,3 +58,7 @@
 	url = https://github.com/nixternal/taskwarrior-vim.git
 	path = .vim/bundle/taskwarrior-vim
 	branch = master
+[subtree ".vim/bundle/hammer"]
+	url = https://github.com/matthias-guenther/hammer.vim.git
+	path = .vim/bundle/hammer
+	branch = master
