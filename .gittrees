@@ -62,3 +62,7 @@
 	url = https://github.com/matthias-guenther/hammer.vim.git
 	path = .vim/bundle/hammer
 	branch = master
+[subtree ".middleman/html5bphaml"]
+	url = https://github.com/dannyprose/Middleman-HTML5BP-HAML.git
+	path = .middleman/html5bphaml
+	branch = master
