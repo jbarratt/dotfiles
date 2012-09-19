@@ -24,6 +24,7 @@ alias vi=vim
 alias rd="open /System/Library/CoreServices/Screen\ Sharing.app"
 alias clean_downloads="find ~/Downloads -mtime +30 -maxdepth 1 -print -exec rmtrash '{}' ';'"
 alias cleanpyc='find . -type f -name "*.pyc" -delete;'
+alias serve="python -m SimpleHTTPServer"
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 # feels like I should not have to do this
@@ -31,5 +32,12 @@ rvm default
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+unset PYTHONDONTWRITEBYTECODE
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/work
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+source /usr/local/share/python/virtualenvwrapper.sh
 
-export PYTHONDONTWRITEBYTECODE=1
+alias mk26env='mkvirtualenv --python=/usr/local/Cellar/python26/2.6.8/bin/python'
+
+#export PYTHONDONTWRITEBYTECODE=1
