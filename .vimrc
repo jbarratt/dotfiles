@@ -98,3 +98,5 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 let g:pymode_lint_checker = "pep8,mccabe"
+map <leader>j :RopeGotoDefinition<CR>
+map <leader>r :RopeRename<CR>
