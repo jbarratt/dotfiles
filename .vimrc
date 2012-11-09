@@ -100,3 +100,9 @@ map <C-l> <C-w>l
 let g:pymode_lint_checker = "pep8,mccabe"
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
+
+" custom surroundings for confluence editing
+" 'l' for literal. So 'ysWl' to surround from cursor to end of word
+let g:surround_108 = "{{\r}}"
+" 'n' for noformat
+let g:surround_110 = "{noformat}\r{noformat}"
