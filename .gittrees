@@ -70,3 +70,7 @@
 	url = git://github.com/tpope/vim-repeat.git
 	path = .vim/bundle/vim-repeat
 	branch = master
+[subtree ".vim/bundle/vim-plantuml-syntax"]
+	url = git://github.com/dtjm/plantuml-syntax.vim.git
+	path = .vim/bundle/vim-plantuml-syntax
+	branch = master
