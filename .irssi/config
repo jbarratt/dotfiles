@@ -277,6 +277,8 @@ settings = {
     growl_show_hilight = "yes";
     growl_net_sticky_away = "yes";
     crapbuster_levels = "JOINS PARTS QUITS NICKS CLIENTCRAP CRAP MODE TOPICS KICKS";
+    shorturl_debug = "yes";
+    shorturl_min_url_length = "12";
   };
 };
 hilights = (
