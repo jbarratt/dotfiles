@@ -16,7 +16,7 @@ chpwd() {
         update_terminal_cwd
 }
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:~/perl5/bin:~/.dotfiles/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:~/perl5/bin:~/.dotfiles/bin:/usr/local/texlive/2012basic/bin/universal-darwin:$PATH
 
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
