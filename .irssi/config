@@ -4,14 +4,13 @@ servers = (
     port = 6667;
     chatnet = "bitlbee";
     autoconnect = "yes";
+    password = "insecure";
  }
 );
 
 chatnets = {
     bitlbee = {
     type          = "IRC";
-    ### the next line acts as an autoconnect function to the IM gateway bitlbee
-    autosendcmd   = "/^msg -bitlbee &bitlbee identify goobers; wait -bitlbee 2000";
   };
 };
 
