@@ -4,11 +4,19 @@ call pathogen#infect()
 set nobackup
 set noswapfile
 
-" force me to stop using lazy arrows
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+" fix arrow keys so I can't use them
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" make up and down keys work on screen lines instead of file lines
+nnoremap j gj
+nnoremap k gk
 
 "set ai to terse nowarn sm ruler redraw sw=2 ts=2
 setlocal tabstop=4
@@ -18,14 +26,60 @@ setlocal textwidth=80
 set ai
 set to "timeout for getting commands
 set ruler redraw
-set smartcase
 set expandtab smarttab
+
+set encoding=utf8
+set scrolloff=3
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+
 
 set bs=2
 set hls
 
+" q: format comments with 'gq'
+" r: auto-insert comment leader on newline
+" n: numbered lists
+set formatoptions=qrn1
+
+" set a colored mark at 85 columns
+set colorcolumn=85
+
+" make searches more perl compatible
+nnoremap / /\v
+vnoremap / /\v
+
+" all lowercase searches are case-insensitive;
+" mixed case searches are sensitive
+set ignorecase
+set smartcase
+
+" search and replace defaults to /g. Add a /g to turn it off.
+set gdefault
+
+" show searches incrementally as we search for them
+set incsearch
+set showmatch
+set hlsearch
+" shortcut for noh, <leader>' '
+nnoremap <leader><space> :noh<cr>
+
+" bounce between brackets with <TAB>
+nnoremap <tab> %
+vnoremap <tab> %
+
 " supposed to make vim use the system clipboard
-set clipboard=unnamed
+" This is annoying. Turn it off.
+" set clipboard=unnamed
 
 " for when you edit a file you forgot you'll need perms for afterwards
 cmap w!! w !sudo tee % >/dev/null
