@@ -28,6 +28,8 @@ set to "timeout for getting commands
 set ruler redraw
 set expandtab smarttab
 
+set sw=4
+
 set encoding=utf8
 set scrolloff=3
 set showmode
@@ -37,7 +39,6 @@ set wildmenu
 set wildmode=list:longest
 set cursorline
 set ttyfast
-set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
