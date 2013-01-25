@@ -78,3 +78,7 @@
 	url = git://github.com/rodjek/vim-puppet.git
 	path = .vim/bundle/vim-puppet
 	branch = master
+[subtree ".vim/bundle/vim-rst-ftplugin"]
+	url = git://github.com/khorser/vim-rst-ftplugin.git
+	path = .vim/bundle/vim-rst-ftplugin
+	branch = master
