@@ -78,11 +78,11 @@
 	url = git://github.com/rodjek/vim-puppet.git
 	path = .vim/bundle/vim-puppet
 	branch = master
-[subtree ".vim/bundle/vim-rst-ftplugin"]
-	url = git://github.com/khorser/vim-rst-ftplugin.git
-	path = .vim/bundle/vim-rst-ftplugin
-	branch = master
 [subtree ".vim/bundle/utilisnips"]
 	url = git://github.com/SirVer/ultisnips.git
 	path = .vim/bundle/utilisnips
+	branch = master
+[subtree ".vim/bundle/riv"]
+	url = git://github.com/Rykka/riv.vim.git
+	path = .vim/bundle/riv
 	branch = master
