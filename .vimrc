@@ -24,6 +24,7 @@ Bundle 'repeat.vim'
 Bundle 'surround.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Rykka/riv.vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 set nobackup
 set noswapfile
