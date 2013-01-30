@@ -1,38 +1,6 @@
-[subtree ".vim/bundle/vim-pathogen"]
-	url = https://github.com/tpope/vim-pathogen.git
-	path = .vim/bundle/vim-pathogen
-	branch = master
-[subtree ".vim/bundle/vim-colors-solarized"]
-	url = https://github.com/altercation/vim-colors-solarized.git
-	path = .vim/bundle/vim-colors-solarized
-	branch = master
-[subtree ".vim/bundle/vim-fugitive"]
-	url = https://github.com/tpope/vim-fugitive.git
-	path = .vim/bundle/vim-fugitive
-	branch = master
-[subtree ".vim/bundle/vim-markdown"]
-	url = https://github.com/tpope/vim-markdown.git
-	path = .vim/bundle/vim-markdown
-	branch = master
-[subtree ".vim/bundle/gundo"]
-	url = https://github.com/sjl/gundo.vim.git
-	path = .vim/bundle/gundo
-	branch = master
-[subtree ".vim/bundle/vim-octopress"]
-	url = https://github.com/tangledhelix/vim-octopress.git
-	path = .vim/bundle/vim-octopress
-	branch = master
 [subtree "zshuery"]
 	url = https://github.com/myfreeweb/zshuery.git
 	path = zshuery
-	branch = master
-[subtree ".vim/bundle/fuzzyfinder"]
-	url = https://github.com/vim-scripts/FuzzyFinder.git
-	path = .vim/bundle/fuzzyfinder
-	branch = master
-[subtree ".vim/bundle/vim-l9"]
-	url = https://github.com/vim-scripts/L9.git
-	path = .vim/bundle/vim-l9
 	branch = master
 [subtree ".irssi/scripts/irssi-growl"]
 	url = https://github.com/kfdm/irssi-growl.git
@@ -42,47 +10,11 @@
 	url = https://github.com/huyz/irssi-colors-solarized.git
 	path = .irssi-extras/solarized
 	branch = master
-[subtree ".vim/bundle/python-mode"]
-	url = git://github.com/klen/python-mode.git
-	path = .vim/bundle/python-mode
-	branch = master
 [subtree "apps/gcalcli"]
 	url = https://github.com/insanum/gcalcli.git
 	path = apps/gcalcli
 	branch = master
-[subtree ".vim/bundle/taskwarrior-vim"]
-	url = https://github.com/nixternal/taskwarrior-vim.git
-	path = .vim/bundle/taskwarrior-vim
-	branch = master
-[subtree ".vim/bundle/hammer"]
-	url = https://github.com/matthias-guenther/hammer.vim.git
-	path = .vim/bundle/hammer
-	branch = master
 [subtree ".middleman/html5bphaml"]
 	url = https://github.com/dannyprose/Middleman-HTML5BP-HAML.git
 	path = .middleman/html5bphaml
-	branch = master
-[subtree ".vim/bundle/vim-surround"]
-	url = git://github.com/tpope/vim-surround.git
-	path = .vim/bundle/vim-surround
-	branch = master
-[subtree ".vim/bundle/vim-repeat"]
-	url = git://github.com/tpope/vim-repeat.git
-	path = .vim/bundle/vim-repeat
-	branch = master
-[subtree ".vim/bundle/vim-plantuml-syntax"]
-	url = git://github.com/dtjm/plantuml-syntax.vim.git
-	path = .vim/bundle/vim-plantuml-syntax
-	branch = master
-[subtree ".vim/bundle/vim-puppet"]
-	url = git://github.com/rodjek/vim-puppet.git
-	path = .vim/bundle/vim-puppet
-	branch = master
-[subtree ".vim/bundle/utilisnips"]
-	url = git://github.com/SirVer/ultisnips.git
-	path = .vim/bundle/utilisnips
-	branch = master
-[subtree ".vim/bundle/riv"]
-	url = git://github.com/Rykka/riv.vim.git
-	path = .vim/bundle/riv
 	branch = master
