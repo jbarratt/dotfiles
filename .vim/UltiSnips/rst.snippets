@@ -1,0 +1,23 @@
+snippet object "Quickie Object Map" !b
+
+${1:ObjectName}
+${1/\w/=/g}
+
+Object
+^^^^^^
+
+Field Name  Type  Description
+
+Relationships
+^^^^^^^^^^^^^
+
+.. uml::
+
+    $1 o-- OtherObject
+
+Events
+^^^^^^
+
+Action  Note
+
+endsnippet
