@@ -1,5 +1,29 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+":BundleInstall! to update
+":BundleClean to remove if you remove lines from this
+
+Bundle 'gmarik/vundle'
+Bundle 'L9'
+Bundle 'Gundo'
+Bundle 'Python-mode-klen'
+Bundle 'hammer.vim'
+Bundle 'FuzzyFinder'
+Bundle 'UltiSnips'
+Bundle 'Solarized'
+Bundle 'fugitive.vim'
+Bundle 'Markdown'
+Bundle 'vim-octopress'
+Bundle 'plantuml-syntax'
+Bundle 'Puppet-Syntax-Highlighting'
+Bundle 'repeat.vim'
+Bundle 'surround.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'Rykka/riv.vim'
 
 set nobackup
 set noswapfile
@@ -96,6 +120,11 @@ imap jj <Esc>
 
 syntax enable
 filetype plugin indent on
+
+"g:solarized_termtrans =   0       |   1
+"let g:solarized_contrast  = "low"
+let g:solarized_termcolors = 16
+let g:solarized_bold = 1
 
 set background=dark
 colorscheme solarized

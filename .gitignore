@@ -1,3 +1,4 @@
 *.sw?
 .netrwhist
 .vim/spell
+.vim/bundle
