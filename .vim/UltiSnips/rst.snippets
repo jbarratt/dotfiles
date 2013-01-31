@@ -21,3 +21,11 @@ Events
 Action  Note
 
 endsnippet
+
+snippet id "Letters and numbers id" !b
+`!p 
+if not snip.c:
+   chars = [random.choice(string.ascii_uppercase + string.digits) for x in range(9)]
+   snip.rv = ''.join(chars)
+`
+endsnippet
