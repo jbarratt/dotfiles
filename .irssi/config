@@ -1,22 +1,29 @@
 servers = (
- {
+  {
     address = "localhost";
-    port = 6667;
+    port = "6667";
     chatnet = "bitlbee";
     autoconnect = "yes";
     password = "insecure";
- }
+  },
+  {
+    address = "chat.freenode.net";
+    chatnet = "Freenode";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
 );
 
 chatnets = {
-    bitlbee = {
-    type          = "IRC";
-  };
+  bitlbee = { type = "IRC"; };
+  Freenode = { type = "IRC"; nick = "jbarratt"; };
 };
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; },
+  { name = "#pdxpython"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "bpm"; chatnet = "bitlbee"; autojoin = "Yes"; }
 );
 
@@ -36,7 +43,7 @@ aliases = {
   WI = "whois";
   WII = "whois $0 $0";
   WW = "whowas";
-  W = "who";
+  W = "window goto";
   N = "names";
   M = "msg";
   T = "topic";
@@ -229,3 +236,4 @@ ignores = (
   { level = "JOINS QUITS MODES"; channels = ( "&bitlbee" ); }
 );
 logs = { };
+keyboard = ( { key = "meta-x"; id = "command"; data = "window last"; } );
