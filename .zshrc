@@ -41,3 +41,7 @@ source /usr/local/share/python/virtualenvwrapper.sh
 alias mk26env='mkvirtualenv --python=/usr/local/Cellar/python26/2.6.8/bin/python'
 
 #export PYTHONDONTWRITEBYTECODE=1
+
+export ANSIBLE_HOSTS=~/.ansible_hosts
+
+. ~/.dotfiles/bin/z.sh
