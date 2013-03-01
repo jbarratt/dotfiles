@@ -25,6 +25,7 @@ alias rd="open /System/Library/CoreServices/Screen\ Sharing.app"
 alias clean_downloads="find ~/Downloads -mtime +30 -maxdepth 1 -print -exec rmtrash '{}' ';'"
 alias cleanpyc='find . -type f -name "*.pyc" -delete;'
 alias serve="python -m SimpleHTTPServer"
+alias 'perl-repl'='perl -MData::Dumper -MTerm::ReadLine -e '\''$r = Term::ReadLine->new(1);while(defined($_ = $r->readline("code:  "))){$ret=Dumper(eval($_));$err=$@;if($err ne ""){print $err;}else{print $ret;}}'\'''
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 # feels like I should not have to do this
