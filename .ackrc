@@ -1,0 +1,6 @@
+# include puppet files as a type
+--type-set
+puppet=.pp,.erb
+
+#
+--pager=less -r
