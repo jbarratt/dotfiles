@@ -24,6 +24,7 @@ Bundle 'surround.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'matthias-guenther/hammer.vim'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'VOoM'
 
 set nobackup
