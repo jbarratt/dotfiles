@@ -10,6 +10,9 @@ export CLICOLOR=1
 # faux solarized scheme for ls
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
+export TERM="screen-256color"
+alias tmux="tmux -2"
+
 prompts '%{$fg_bold[green]%}$(COLLAPSED_DIR)%{$reset_color%}$(virtualenv_info) %{$fg[yellow]%}$(prompt_char)%{$reset_color%} '
 
 chpwd() {
