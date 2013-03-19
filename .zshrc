@@ -30,12 +30,6 @@ alias cleanpyc='find . -type f -name "*.pyc" -delete;'
 alias serve="python -m SimpleHTTPServer"
 alias 'perl-repl'='perl -MData::Dumper -MTerm::ReadLine -e '\''$r = Term::ReadLine->new(1);while(defined($_ = $r->readline("code:  "))){$ret=Dumper(eval($_));$err=$@;if($err ne ""){print $err;}else{print $ret;}}'\'''
 
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-# feels like I should not have to do this
-rvm default
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 unset PYTHONDONTWRITEBYTECODE
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
@@ -46,6 +40,22 @@ alias mk26env='mkvirtualenv --python=/usr/local/Cellar/python26/2.6.8/bin/python
 
 #export PYTHONDONTWRITEBYTECODE=1
 
+# Ansible Config
 export ANSIBLE_HOSTS=~/.ansible_hosts
 
+# Z, the magic remembering command line warper
 . ~/.dotfiles/bin/z.sh
+
+
+export RBENV_ROOT=/usr/local/var/rbenv 
+export PATH="$RBENV_ROOT/bin:$PATH"
+export RUBY_BUILD_BUILD_PATH="$HOME/tmp"
+#export PREFIX="$RBENV_ROOT"
+export RBENV_VERSION=1.9.3-p392
+eval "$(rbenv init -)"
+
+ #add some easy terminal alias for bundler calls
+alias b="bundle exec"
+alias bi="bundle install --without production"
+# add bundler binstubs to the path so relative binarys are auto run from a project dir
+export PATH="./vendor/bundle/bin:$PATH"

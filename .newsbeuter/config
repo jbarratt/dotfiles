@@ -1,0 +1,28 @@
+#http://www.newsbeuter.org/doc/newsbeuter.html
+auto-reload yes
+reload-time 30
+refresh-on-startup no
+user-agent "Liferea/1.4.14 (Linux; en_US.UTF8; http://liferea.sf.net/)"
+error-log "~/.newsbeuter/error.log"
+reload-threads 15
+show-read-feeds no
+show-read-articles no
+browser "open -g %u"
+macro i set browser "~/.dotfiles/bin/qli %u"; open ; set browser "open -g %u"
+
+# color config
+# Defaults
+#color background   white   black
+#color listnormal   white   black
+#color listfocus    yellow  blue   bold
+#color info         yellow  blue   bold
+#color article      white   black
+
+# Solarized
+# https://github.com/akrennmair/newsbeuter/blob/master/contrib/colorschemes/solarized-dark
+color listnormal color244 color234
+color listfocus  color166 color235 
+color info       color136 color235 
+color background color244 color234
+color article    color244 color234
+

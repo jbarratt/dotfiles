@@ -63,23 +63,26 @@ fi
 if [[ -d /var/lib/gems/1.8/bin ]]; then # oh Debian/Ubuntu
     export PATH=$PATH:/var/lib/gems/1.8/bin
 fi
+
 # RVM or rbenv
-if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-    source $HOME/.rvm/scripts/rvm
-    RUBY_VERSION_PREFIX='r'
-    ruby_version() {
-        if [[ $RUBY_VERSION != "" ]]; then
-            echo $RUBY_VERSION_PREFIX$RUBY_VERSION | sed s/ruby-//
-        else echo ''; fi
-    }
-elif [[ -d $HOME/.rbenv ]]; then
-    export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
-    source $HOME/.rbenv/completions/rbenv.zsh
-    rbenv rehash 2>/dev/null
-    ruby_version() { rbenv version-name }
-else
-    ruby_version() { echo '' }
-fi
+#if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+#    source $HOME/.rvm/scripts/rvm
+#    RUBY_VERSION_PREFIX='r'
+#    ruby_version() {
+#        if [[ $RUBY_VERSION != "" ]]; then
+#            echo $RUBY_VERSION_PREFIX$RUBY_VERSION | sed s/ruby-//
+#        else echo ''; fi
+#    }
+#
+#elif [[ -d $HOME/.rbenv ]]; then
+#    export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
+#    source $HOME/.rbenv/completions/rbenv.zsh
+#    rbenv rehash 2>/dev/null
+#    ruby_version() { rbenv version-name }
+#else
+#    ruby_version() { echo '' }
+#fi
+
 # Current directory in title
 if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
     update_terminal_cwd() {

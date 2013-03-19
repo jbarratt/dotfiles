@@ -2,3 +2,7 @@
 .netrwhist
 .vim/spell
 .vim/bundle
+.newsbeuter/cache.*
+.newsbeuter/error.log
+.newsbeuter/history.cmdline
+.newsbeuter/history.search
