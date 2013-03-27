@@ -25,6 +25,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'matthias-guenther/hammer.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle "lepture/vim-jinja"
 Bundle 'VOoM'
 
 set nobackup
@@ -199,3 +200,6 @@ map <leader>r :RopeRename<CR>
 let g:surround_108 = "{{\r}}"
 " 'n' for noformat
 let g:surround_110 = "{noformat}\r{noformat}"
+
+
+au BufNewFile,BufRead *.j2 set ft=jinja

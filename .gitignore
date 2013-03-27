@@ -6,3 +6,4 @@
 .newsbeuter/error.log
 .newsbeuter/history.cmdline
 .newsbeuter/history.search
+.DS_Store
