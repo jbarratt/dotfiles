@@ -59,3 +59,6 @@ alias b="bundle exec"
 alias bi="bundle install --without production"
 # add bundler binstubs to the path so relative binarys are auto run from a project dir
 export PATH="./vendor/bundle/bin:$PATH"
+
+# pip reinstall
+alias pipr='pip install --no-deps --ignore-installed'
