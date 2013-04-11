@@ -62,3 +62,5 @@ export PATH="./vendor/bundle/bin:$PATH"
 
 # pip reinstall
 alias pipr='pip install --no-deps --ignore-installed'
+
+alias dropboxgit='if [[ -e .git ]] ; then NAME=$(basename `pwd`) ; git init --bar ~/Dropbox/git/$NAME.git ; git remote add origin ~/Dropbox/git/$NAME.git ; git push -u origin master ; echo "Dropbox remote created" ; else ; echo "not currently in a git repo" ; fi'
