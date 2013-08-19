@@ -15,7 +15,6 @@ Bundle 'FuzzyFinder'
 Bundle 'UltiSnips'
 Bundle 'Solarized'
 Bundle 'fugitive.vim'
-Bundle 'Markdown'
 Bundle 'vim-octopress'
 Bundle 'plantuml-syntax'
 Bundle 'Puppet-Syntax-Highlighting'
@@ -27,6 +26,9 @@ Bundle 'matthias-guenther/hammer.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle "lepture/vim-jinja"
 Bundle 'VOoM'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'vim-pandoc/vim-pandoc'
 
 set nobackup
 set noswapfile
@@ -203,3 +205,5 @@ let g:surround_110 = "{noformat}\r{noformat}"
 
 
 au BufNewFile,BufRead *.j2 set ft=jinja
+
+nmap <leader>v :!pandoc -t html -T 'Pandoc Generated' --smart --standalone --self-contained -c ~/.dotfiles/css/buttondown.css % \|bcat<cr><cr>
