@@ -28,7 +28,8 @@ Bundle "lepture/vim-jinja"
 Bundle 'VOoM'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'jnwhiteh/vim-golang'
-Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'dgryski/vim-godef'
+Bundle 'tpope/vim-markdown'
 
 set nobackup
 set noswapfile
@@ -206,4 +207,5 @@ let g:surround_110 = "{noformat}\r{noformat}"
 
 au BufNewFile,BufRead *.j2 set ft=jinja
 
-nmap <leader>v :!pandoc -t html -T 'Pandoc Generated' --smart --standalone --self-contained -c ~/.dotfiles/css/buttondown.css % \|bcat<cr><cr>
+nmap <leader>vp :!pandoc -t html -T 'Pandoc Generated - "%"' --smart --standalone --self-contained -c ~/.dotfiles/css/buttondown.css % \|bcat<cr><cr>
+nmap <leader>vv :!pandoc -t html -T 'Pandoc Generated - "%"' --smart --standalone --self-contained -c ~/.dotfiles/css/pandoc.css % \|bcat<cr><cr>
