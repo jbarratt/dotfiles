@@ -19,11 +19,11 @@ chpwd() {
         update_terminal_cwd
 }
 
-export GOROOT="/usr/local/Cellar/go/1.1.1"
-export GOBIN="$GOROOT/bin/"
+export GOROOT="/usr/local/Cellar/go/1.2"
+export GOBIN="$GOROOT/bin"
 export GOPATH=$HOME/work/go
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:~/perl5/bin:~/.dotfiles/bin:/usr/local/texlive/2012basic/bin/universal-darwin:$GOBIN:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:~/perl5/bin:~/.dotfiles/bin:/usr/local/texlive/2012basic/bin/universal-darwin:$GOBIN:$PATH
 
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
@@ -71,3 +71,5 @@ alias dropboxgit='if [[ -e .git ]] ; then NAME=$(basename `pwd`) ; git init --ba
 
 alias rpi_ip="arp -a | grep b8:27:eb | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias key_rpi="ssh-copy-id pi@`rpi_ip`"
+
+alias ipn='ipython notebook --pylab inline'

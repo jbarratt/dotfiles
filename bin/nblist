@@ -7,9 +7,9 @@ import re
     Caveat: Works on only OSX for now.
     Lists running ipython notebooks and their working directories.
 
-        $ lsnotebook
-          /Users/me/work/notebooks: http://127.0.0.1:8088
-          /Users/me/work/otherproject: http://127.0.0.1:8089
+        $ nblist
+          http://127.0.0.1:8088 | /Users/me/work/notebooks
+          http://127.0.0.1:8089 | /Users/me/work/otherproject
 
     * Pull a process list
     * For all ipython notebook processes,
