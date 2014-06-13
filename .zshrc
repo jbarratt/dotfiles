@@ -72,4 +72,7 @@ alias dropboxgit='if [[ -e .git ]] ; then NAME=$(basename `pwd`) ; git init --ba
 alias rpi_ip="arp -a | grep b8:27:eb | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias key_rpi="ssh-copy-id pi@`rpi_ip`"
 
-alias ipn='ipython notebook --pylab inline'
+alias ipn='ipython notebook'
+export PATH="/Users/jbarratt/tmp/google-cloud-sdk/bin:$PATH"
+
+mdhtml () { pandoc -t html -T 'Pandoc Generated' --smart --standalone --self-contained -c ~/.dotfiles/css/avenir-white.css $1 | bcat }

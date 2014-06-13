@@ -2,5 +2,8 @@
 --type-set
 puppet=.pp,.erb
 
+--type-set
+ipynb:ext:ipynb
+
 #
 --pager=less -r
